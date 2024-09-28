@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  </title>
+    <center>
+    <script>
+        {
+            var data = [
+  {
+    "ID": 1,
+    "name": "apple",
+    "quantity":"1kg",
+    "rate": "200",
+    "Description":"It is Good For Health"   
+  },
+  {
+    "ID": 2,
+    "name": "banana",
+    "quantity":"1kg",
+    "rate": "80",
+    "Description":"Banana Is a Good Protein Source"    
+  },
+  {
+    "ID": 3,
+    "name": "Orange",
+    "quantity":"1kg",
+    "rate": "120",
+    "Description":"Orange Can Be Also Made As Juice"    
+  },
+];
+var n = [];
+document.write("<table border><tr>");
+for (n in data[0]) {
+	document.write('<td>' + n + '</td>');
+}
+document.write("</tr>");
+for (var i = 0; i < data.length; i++) {
+	document.write('<tr>');
+	for (m in data[i]) {
+  	document.write('<td>' + data[i][m] + '</td>');
+  }
+	document.write('</tr>');
+}
+document.write("</table>");
+        }
+    </script>
+</head>
+<body>
+    <h1><b><i>ThankYou</i></b></h1>
+</body>
+</center>
+</html>
